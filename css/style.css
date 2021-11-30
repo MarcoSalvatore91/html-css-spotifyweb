@@ -112,6 +112,10 @@ main {
 
 /* Recently-Played */
 
+#recently-played {
+    padding: 0 40px;
+}
+
 /* Footer */
 
 #player {
