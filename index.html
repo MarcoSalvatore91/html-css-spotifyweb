@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marco Salvatore">
     <meta name="description" content="Spotify">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="https://www.scdn.co/i/_global/twitter_card-default.jpg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -75,6 +78,7 @@
 
     <footer>
         <div id="player">
+            <!-- Current-Song -->
             <div id="current-song">
                 <img src="img/sinister.jpeg" alt="song">
                 <div class="artist">
@@ -82,9 +86,34 @@
                     <span class="grey">Brano</span>
                     <span class="grey">Nome</span>
                 </div>
-                <div id="preference">
+                <div id="preference" class="grey">
                     <i class="far fa-heart"></i>
                     <i class="far fa-folder"></i>
+                </div>
+            </div>
+            <!-- Play-song -->
+            <div id="play-song">
+                <div class="buttons white">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="time-song">
+                    <span class="white">0:25</span>
+                    <div class="line">
+                        <div class="line-progress"></div>
+                    </div>
+                    <span class="white">4:35</span>
+                </div>
+            </div>
+            <div id="volume">
+                <i class="fas fa-sliders-h"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+                <div class="line">
+                    <div class="line-progress"></div>
                 </div>
             </div>
         </div>
