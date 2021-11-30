@@ -16,6 +16,10 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Main */
 
 /* Sidebar */
@@ -53,7 +57,7 @@ main {
     height: 30px;
     border: 1px solid white;
     border-radius: 50%;
-    background-color: black;
+    background-color: grey;
 }
 
 /* Nav-Page */
@@ -67,7 +71,7 @@ main {
 /* Head-Main */
 
 #head-main {
-    background-color: yellow;
+    background-color: darkgray;
     flex-basis: 100px;
     position: relative;
 }
@@ -86,10 +90,27 @@ main {
 /* Menu-Page */
 
 #menu-page {
+    display: flex;
+    flex-direction: column;
     background-color: green;
     flex-grow: 1;
 }
 
+/* Nav-Menu-page */
+
+#menu-page nav {
+    display: flex;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#menu-page a{
+    color: grey;
+    padding: 10px 20px;
+}
+
+/* Recently-Played */
 
 /* Footer */
 
