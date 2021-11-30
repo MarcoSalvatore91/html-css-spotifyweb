@@ -8,6 +8,7 @@
 
 body {
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Utilities */
@@ -111,6 +112,7 @@ main {
 #menu-page a{
     color: grey;
     padding: 20px 10px;
+    font-size: 0.9rem;
 }
 
 /* Recently-Played */
@@ -138,9 +140,12 @@ main {
 
 #player {
     display: flex;
+    justify-content: space-between;
     height: 100px;
     background-color: rgb(40,40,40);
 }
+
+/* Current-song */
 
 #current-song {
     display: flex;
@@ -150,16 +155,71 @@ main {
 #current-song img{
     height: 40px;
     width: 40px;
+    margin: 0 10px;
 }
 
 #current-song .artist {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 #current-song #preference {
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
+}
+
+#preference i:first-child {
+    margin-bottom: 1px;
+}
+
+/* Play-song */
+
+#play-song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-song i{
+    padding: 0 10px;
+}
+
+#play-song i:nth-child(3) {
+    font-size: 1.5em;
+}
+
+#play-song .time-song {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.time-song .line {
+    margin: 0 10px;
+    height: 5px;
+    width: 100px;
+    background-color: grey;
+    align-self: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.time-song .line-progress {
+    position: absolute;
+    height: 5px;
+    width: 40px;
+    background-color: white;
+}
+
+/* Volume */
+
+#volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Responsive */
