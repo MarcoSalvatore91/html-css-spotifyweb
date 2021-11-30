@@ -33,8 +33,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 50px;
-    height: 100%;
+    flex-basis: 100px;
     background-color: black;
 }
 
@@ -71,18 +70,15 @@ main {
 /* Head-Main */
 
 #head-main {
+    display: flex;
     background-color: darkgray;
     flex-basis: 100px;
-    position: relative;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 #head-main span {
-    position: absolute;
-    transform: translate(0, -50%);
-    top: 50%;
-    right: 0;
-    padding: 0 40px;
-    line-height: 40px;
+    padding: 10px 40px;
     border: 1px solid;
     border-radius: 30px;
 }
@@ -94,6 +90,8 @@ main {
     flex-direction: column;
     background-color: green;
     flex-grow: 1;
+    max-height: calc(100vh - 200px);
+    overflow-y: scroll;
 }
 
 /* Nav-Menu-page */
@@ -108,6 +106,7 @@ main {
 #menu-page a{
     color: grey;
     padding: 10px 20px;
+
 }
 
 /* Recently-Played */
@@ -116,9 +115,20 @@ main {
     padding: 0 40px;
 }
 
+#recently-played .albums {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recently-played img {
+    height: 200px;
+    flex-basis: 200px;
+}
+
 /* Footer */
 
 #player {
+    display: flex;
     height: 100px;
     background-color: chocolate;
 }
