@@ -17,26 +17,36 @@ body {
 /* Main */
 
 main {
-    height: calc(100vh - 200px);
+    display: flex;
+    height: calc(100vh - 100px);
 }
 
 #sidebar {
-    background-color: chartreuse;
+    background-color: red;
+    width: 50px;
+    height: 100%;
+}
+
+#nav-page {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-basis: calc(100% - 50px);
 }
 
 #head-main {
-
+    background-color: yellow;
+    flex-basis: 100px;
 }
 
 #menu-page {
-
+    background-color: green;
+    flex-grow: 1;
+    
 }
 
 /* Footer */
 
 #player {
-
+    height: 100px;
+    background-color: chocolate;
 }
