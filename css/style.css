@@ -23,14 +23,14 @@ main {
 
 #sidebar {
     background-color: red;
-    width: 50px;
+    flex-basis: 50px;
     height: 100%;
 }
 
 #nav-page {
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100% - 50px);
+    flex-grow: 1;
 }
 
 #head-main {
@@ -49,4 +49,12 @@ main {
 #player {
     height: 100px;
     background-color: chocolate;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 769px) {
+    #sidebar {
+        flex-basis: 200px;
+    }
 }
