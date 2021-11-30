@@ -12,9 +12,13 @@ body {
 
 /* Utilities */
 
-
+.white {
+    color: white;
+}
 
 /* Main */
+
+/* Sidebar */
 
 main {
     display: flex;
@@ -22,14 +26,37 @@ main {
 }
 
 #sidebar {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-basis: 50px;
     height: 100%;
+    background-color: black;
+}
+
+#navbar, #user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sidebar img {
-    width: 70%;
+    width: 30px;
+    margin: 10px 0;
 }
+
+#sidebar #user img:first-child {
+    width: 20px;
+}
+
+#sidebar #user img:last-child {
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* Nav-Page */
 
 #nav-page {
     display: flex;
@@ -37,10 +64,26 @@ main {
     flex-grow: 1;
 }
 
+/* Head-Main */
+
 #head-main {
     background-color: yellow;
     flex-basis: 100px;
+    position: relative;
 }
+
+#head-main span {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 0;
+    padding: 0 40px;
+    line-height: 40px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+/* Menu-Page */
 
 #menu-page {
     background-color: green;
