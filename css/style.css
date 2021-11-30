@@ -27,6 +27,10 @@ main {
     height: 100%;
 }
 
+#sidebar img {
+    width: 70%;
+}
+
 #nav-page {
     display: flex;
     flex-direction: column;
@@ -41,8 +45,8 @@ main {
 #menu-page {
     background-color: green;
     flex-grow: 1;
-    
 }
+
 
 /* Footer */
 
