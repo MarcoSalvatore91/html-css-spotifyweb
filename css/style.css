@@ -1,0 +1,42 @@
+/* Generics */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Utilities */
+
+
+
+/* Main */
+
+main {
+    height: calc(100vh - 200px);
+}
+
+#sidebar {
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#head-main {
+
+}
+
+#menu-page {
+
+}
+
+/* Footer */
+
+#player {
+
+}
