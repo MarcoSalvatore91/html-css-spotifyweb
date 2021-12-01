@@ -139,20 +139,20 @@ main {
 
 /* Recently-Played */
 
-#recently-played {
+#recently-played, #create-for-you {
     margin: 0 25px;
 }
 
-#recently-played h1{
-    margin: 30px 0;
+#recently-played h1 {
+    margin: 30px 0 ;
 }
 
-#recently-played .card {
+#recently-played .card, #create-for-you .card, #most-popular .card {
     float: left;
     height: 325px;
 }
 
-#recently-played img {
+#recently-played img, #create-for-you img, #most-popular img {
     height: 220px;
     width: 220px;
     padding-right: 10px;
@@ -162,15 +162,28 @@ main {
     width: 220px;
     text-align: center;
     margin: 10px 0;
+    font-weight: 600;
 }
 
-.info-song span:first-child {
+#recently-played .info-song span:first-child {
     color: white;
 }
 
-.info-song span:last-child {
+#recently-played .info-song span:last-child {
     color: grey;
     font-size: 0.7rem;
+}
+
+/* Create for you */
+
+#create-for-you h1, #create-for-you p, #most-popular h1, #most-popular p{
+    margin: 20px 0;
+}
+
+/* Most-Popular */
+
+#most-popular .card img {
+    border-radius: 50%;
 }
 
 /* Footer */
@@ -342,6 +355,10 @@ main {
         margin: 10px 20px;
         line-height: 30px;
     }
+    .playlist div {
+        display: flex;
+        align-items: center;
+    }
     .add-playlist {
         position: relative;
         color: black;
@@ -349,6 +366,7 @@ main {
         width: 40px;
         background-color: grey;
         display: inline-block;
+        margin-right: 5px;
     }
     .add-playlist span{
         font-size: 40px;
