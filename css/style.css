@@ -44,7 +44,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 60px;
+    width: 60px;
     flex-shrink: 1;
     background-color: black;
 }
@@ -107,6 +107,7 @@ main {
     flex-direction: column;
     background-color: rgb(20,25,34);
     padding-top: 80px;
+    flex-grow: 1;
 }
 
 /* Nav-Menu-page */
@@ -142,6 +143,22 @@ main {
 #recently-played img {
     height: 220px;
     width: 220px;
+    padding-right: 10px;
+}
+
+.info-song {
+    width: 220px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.info-song span:first-child {
+    color: white;
+}
+
+.info-song span:last-child {
+    color: grey;
+    font-size: 0.7rem;
 }
 
 /* Footer */
