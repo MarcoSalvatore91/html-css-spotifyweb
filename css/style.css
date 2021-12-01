@@ -66,8 +66,7 @@ main {
 
 #sidebar img {
     width: 30px;
-    margin: 10px 0;
-    padding-right: 10px;
+    margin: 5px 0;
 }
 
 #sidebar #user img:first-child {
@@ -102,7 +101,7 @@ main {
 
 #head-main span {
     padding: 10px 40px;
-    margin-right: 10px;
+    margin-right: 20px;
     border: 1px solid;
     border-radius: 30px;
     position: absolute;
@@ -317,7 +316,7 @@ main {
     }
     #sidebar #navbar #logo-b img {
         width: 150px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     #sidebar #navbar, #sidebar #user {
         align-items: flex-start;
@@ -335,4 +334,31 @@ main {
     #logo-s {
         display: none;
     }
+    #sidebar .playlist {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 20px;
+        line-height: 30px;
+    }
+    .add-playlist {
+        position: relative;
+        color: black;
+        height: 40px;
+        width: 40px;
+        background-color: grey;
+        display: inline-block;
+    }
+    .add-playlist span{
+        font-size: 40px;
+        font-weight: 500;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .new-playlist {
+        vertical-align: middle;
+    }
 }
+
+@media screen and (min-width: 992px)
