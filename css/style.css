@@ -69,11 +69,13 @@ main {
     margin: 5px 0;
 }
 
-#sidebar #user img:first-child {
+#sidebar #user div:first-child img{
     width: 20px;
+    margin-right: 10px;
 }
 
-#sidebar #user img:last-child {
+#sidebar #user div:last-child img{
+    margin-right: 10px;
     height: 30px;
     border: 1px solid white;
     border-radius: 50%;
@@ -359,6 +361,21 @@ main {
     .new-playlist {
         vertical-align: middle;
     }
+    #sidebar #user div:first-child {
+        display: flex;
+        align-items: center;
+    }
+    #sidebar #user div:last-child {
+        display: flex;
+        align-items: center;
+    }
+    #user span {
+        color: white;
+    }
+    hr {
+        color: white;
+        margin: 10px 0;
+    }
 }
 
-@media screen and (min-width: 992px)
+/* @media screen and (min-width: 992px) */
