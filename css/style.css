@@ -176,57 +176,81 @@ main {
 #current-song {
     display: flex;
     align-items: center;
+    flex-basis: 30%;
+}
+
+.contain-artist {
+    display: flex;
+    justify-content: stretch;
+    padding-right: 20px;
 }
 
 #current-song img{
-    height: 40px;
-    width: 40px;
+    align-self: center;
+    height: 35px;
+    width: 35px;
     margin: 0 10px;
 }
 
-#current-song .artist {
+.artist .grey {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+}
+
+.artist span {
+    font-size: 0.8em;
 }
 
 #current-song #preference {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #preference i:first-child {
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 
 /* Play-song */
 
 #play-song {
     display: flex;
+    flex-basis: 35%;
+    flex-shrink: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
-#play-song i{
-    padding: 0 10px;
+#play-song .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#play-song .buttons i {
+    margin: 0 10px;
 }
 
 #play-song i:nth-child(3) {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
-#play-song .time-song {
+.time-song {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    justify-content: center;
+}
+
+.time-song span {
+    font-size: 0.8rem;
 }
 
 .time-song .line {
     margin: 0 10px;
     height: 5px;
-    width: 100px;
+    width: 100%;
     background-color: grey;
     border-radius: 5px;
     position: relative;
@@ -248,8 +272,9 @@ main {
 
 #volume {
     display: flex;
-    justify-content: center;
+    flex-basis: 30%;
     align-items: center;
+    justify-content: flex-end;
 }
 
 #volume i {
@@ -280,4 +305,12 @@ main {
     #sidebar {
         flex-basis: 200px;
     }
+    #head-main {
+        width: calc(100% - 200px);
+    }
+    #sidebar {
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    
 }
