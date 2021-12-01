@@ -31,6 +31,10 @@ a {
     clear: both;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Main */
 
 /* Sidebar */
@@ -55,9 +59,15 @@ main {
     align-items: center;
 }
 
+.icon-side {
+    display: flex;
+    align-items: center;
+}
+
 #sidebar img {
     width: 30px;
     margin: 10px 0;
+    padding-right: 10px;
 }
 
 #sidebar #user img:first-child {
@@ -302,6 +312,17 @@ main {
 /* Responsive */
 
 @media screen and (min-width: 769px) {
+    .hidden {
+        display: block;
+    }
+    #sidebar #navbar #logo-b img {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+    #sidebar #navbar, #sidebar #user {
+        align-items: flex-start;
+        padding-left: 20px;
+    }
     #sidebar {
         flex-basis: 200px;
     }
@@ -310,7 +331,8 @@ main {
     }
     #sidebar {
         align-items: flex-start;
-        padding-left: 20px;
     }
-    
+    #logo-s {
+        display: none;
+    }
 }
