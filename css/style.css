@@ -88,11 +88,11 @@ main {
     height: 100px;
     width: calc(100% - 60px);
     position: fixed;
-
 }
 
 #head-main span {
     padding: 10px 40px;
+    margin-right: 10px;
     border: 1px solid;
     border-radius: 30px;
     position: absolute;
@@ -138,6 +138,7 @@ main {
 
 #recently-played .card {
     float: left;
+    height: 325px;
 }
 
 #recently-played img {
@@ -167,7 +168,6 @@ main {
     display: flex;
     justify-content: space-between;
     height: 100px;
-    flex-shrink: 1;
     background-color: rgb(40,40,40);
 }
 
@@ -228,9 +228,12 @@ main {
     height: 5px;
     width: 100px;
     background-color: grey;
-    align-self: center;
     border-radius: 5px;
     position: relative;
+}
+
+#play-song .time-song {
+    align-items: center;
 }
 
 .time-song .line-progress {
@@ -238,6 +241,7 @@ main {
     height: 5px;
     width: 40px;
     background-color: white;
+    border-radius: 5px;
 }
 
 /* Volume */
@@ -246,6 +250,28 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#volume i {
+    padding-right: 10px;
+    color: white;
+}
+
+.line-volume {
+    height: 5px;
+    width: 80px;
+    background-color: grey;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 5px;
+}
+
+.setting-volume {
+    position: absolute;
+    height: 5px;
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 /* Responsive */
