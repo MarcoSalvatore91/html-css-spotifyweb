@@ -139,7 +139,7 @@ main {
 
 /* Recently-Played */
 
-#recently-played, #create-for-you {
+#recently-played, #create-for-you, #most-popular {
     margin: 0 25px;
 }
 
@@ -147,7 +147,7 @@ main {
     margin: 30px 0 ;
 }
 
-#recently-played .card, #create-for-you .card, #most-popular .card {
+#recently-played .card {
     float: left;
     height: 325px;
 }
@@ -176,11 +176,19 @@ main {
 
 /* Create for you */
 
+#create-for-you .card {
+    float: left;
+}
+
 #create-for-you h1, #create-for-you p, #most-popular h1, #most-popular p{
     margin: 20px 0;
 }
 
 /* Most-Popular */
+
+#most-popular .card {
+    float: left;
+}
 
 #most-popular .card img {
     border-radius: 50%;
@@ -193,6 +201,7 @@ main {
     justify-content: space-between;
     height: 100px;
     background-color: rgb(40,40,40);
+    z-index: 2;
 }
 
 /* Current-song */
@@ -312,7 +321,7 @@ main {
     background-color: grey;
     border-radius: 5px;
     position: relative;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .setting-volume {
@@ -393,6 +402,13 @@ main {
     hr {
         color: white;
         margin: 10px 0;
+    }
+    #recently-played img, #create-for-you img, #most-popular img {
+        height: 195px;
+        width: 195px;
+    }
+    .info-song {
+        width: 185px;
     }
 }
 
