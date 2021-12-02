@@ -37,20 +37,21 @@ a {
 
 /* Main */
 
-/* Sidebar */
-
 main {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
 }
+
+/* Sidebar */
 
 #sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 60px;
-    flex-shrink: 1;
+    flex-shrink: 0;
     background-color: black;
+    overflow: auto;
 }
 
 #navbar, #user{
@@ -140,7 +141,16 @@ hr {
     font-size: 0.9rem;
 }
 
+#menu-page img {
+    width: 100%;
+}
+
 /* Recently-Played */
+
+.recently-song {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #recently-played, #create-for-you, #most-popular {
     margin: 0 25px;
@@ -151,19 +161,12 @@ hr {
 }
 
 #recently-played .card {
-    float: left;
-    height: 325px;
-}
-
-#recently-played img, #create-for-you img, #most-popular img {
-    height: 220px;
-    width: 220px;
+    text-align: center;
+    width: 50%;
     padding-right: 10px;
 }
 
 .info-song {
-    width: 220px;
-    text-align: center;
     margin: 10px 0;
     font-weight: 600;
 }
@@ -179,8 +182,15 @@ hr {
 
 /* Create for you */
 
-#create-for-you .card {
-    float: left;
+.your-song, .popular-song{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.your-song .card, .popular-song .card{
+    text-align: center;
+    width: 50%;
+    padding-right: 10px;
 }
 
 #create-for-you h1, #create-for-you p, #most-popular h1, #most-popular p{
@@ -188,10 +198,6 @@ hr {
 }
 
 /* Most-Popular */
-
-#most-popular .card {
-    float: left;
-}
 
 #most-popular .card img {
     border-radius: 50%;
@@ -202,9 +208,8 @@ hr {
 #player {
     display: flex;
     justify-content: space-between;
-    height: 100px;
+    height: 80px;
     background-color: rgb(40,40,40);
-    z-index: 2;
 }
 
 /* Current-song */
@@ -338,7 +343,7 @@ hr {
 
 /* Responsive */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 639px) {
     .hidden {
         display: block;
     }
@@ -351,13 +356,11 @@ hr {
         padding-left: 20px;
     }
     #sidebar {
-        flex-basis: 300px;
+        flex-basis: 200px;
+        align-items: flex-start;
     }
     #head-main {
-        width: calc(100% - 300px);
-    }
-    #sidebar {
-        align-items: flex-start;
+        width: calc(100% - 200px);
     }
     #logo-s {
         display: none;
@@ -410,7 +413,12 @@ hr {
         color: white;
         margin: 10px 0;
     }
-    #recently-played img, #create-for-you img, #most-popular img {
+    #recently-played .card {
+        text-align: center;
+        width: 50%;
+        padding-right: 10px;
+    }
+    #create-for-you img, #most-popular img {
         height: 180px;
         width: 180px;
     }
