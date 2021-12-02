@@ -497,7 +497,7 @@ hr {
     .hidden {
         display: block;
     }
-    #sidebar .playlist, #sidebar .add-playlist {
+    #sidebar .playlist {
         display: inline-flex;
     }
     #sidebar #navbar #logo-b img {
