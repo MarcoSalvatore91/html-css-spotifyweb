@@ -86,6 +86,52 @@ main {
     margin: 5px 0;
 }
 
+#sidebar #navbar, #sidebar #user {
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.playlist {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    line-height: 40px;
+    display: none;
+}
+.add-playlist {
+    position: relative;
+    color: black;
+    height: 40px;
+    width: 40px;
+    background-color: grey;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.add-playlist span{
+    font-size: 40px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sidebar #user div:first-child {
+    display: flex;
+    align-items: center;
+}
+#sidebar #user div:last-child {
+    display: flex;
+    align-items: center;
+}
+#sidebar #user div:last-child span{
+    margin-left: 10px;
+}
+hr {
+    color: white;
+    width: 100%;
+    margin: 10px 0;
+}
+
 #sidebar #user div:first-child img{
     width: 20px;
     margin-right: 10px;
@@ -97,10 +143,6 @@ main {
     border: 1px solid white;
     border-radius: 50%;
     background-color: grey;
-}
-
-hr {
-    width: 260px;
 }
 
 /* Nav-Page */
@@ -455,16 +497,12 @@ hr {
     .hidden {
         display: block;
     }
-    .icon-select::before{
-        display: inline;
+    #sidebar .playlist, #sidebar .add-playlist {
+        display: inline-flex;
     }
     #sidebar #navbar #logo-b img {
         width: 150px;
         margin: 15px 0;
-    }
-    #sidebar #navbar, #sidebar #user {
-        align-items: flex-start;
-        padding-left: 20px;
     }
     #sidebar {
         flex-basis: 250px;
@@ -475,55 +513,6 @@ hr {
     }
     #logo-s {
         display: none;
-    }
-    #sidebar .playlist {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 20px;
-        line-height: 40px;
-    }
-    .playlist div {
-        display: flex;
-        align-items: center;
-    }
-    .add-playlist {
-        position: relative;
-        color: black;
-        height: 40px;
-        width: 40px;
-        background-color: grey;
-        display: inline-block;
-        margin-right: 5px;
-    }
-    .add-playlist span{
-        font-size: 40px;
-        font-weight: 500;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .new-playlist {
-        vertical-align: middle;
-    }
-    #sidebar #user div:first-child {
-        display: flex;
-        align-items: center;
-    }
-    #sidebar #user div:last-child {
-        display: flex;
-        align-items: center;
-    }
-    #sidebar #user div:last-child span{
-        margin-left: 10px;
-    }
-    #user span {
-        color: white;
-    }
-    hr {
-        color: white;
-        width: 100%;
-        margin: 10px 0;
     }
 }
 
