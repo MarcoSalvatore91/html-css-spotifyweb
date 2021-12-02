@@ -74,7 +74,7 @@ main {
 .icon-select::before {
     content: "";
     height: 30px;
-    width: 5px;
+    width: 2px;
     background-color: greenyellow;
     display: none;
     margin-right: 15px;
@@ -160,8 +160,16 @@ hr {
 }
 
 #menu-page .nav-select {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-page .nav-select::after {
     content: "";
-    border-bottom: 3px solid greenyellow;
+    flex-basis: 2px;
+    background-color: greenyellow;
+    align-items: center;
+    margin: 0 30px;
 }
 
 #menu-page a {
@@ -327,6 +335,7 @@ hr {
 
 #play-song .buttons i {
     margin: 0 10px;
+    cursor: pointer;
 }
 
 #play-song i:nth-child(3) {
@@ -338,6 +347,7 @@ hr {
     flex-direction: row;
     margin-top: 10px;
     justify-content: center;
+    cursor: pointer;
 }
 
 .time-song span {
@@ -397,6 +407,7 @@ hr {
 #volume i {
     padding-right: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .line-volume {
@@ -406,6 +417,7 @@ hr {
     border-radius: 5px;
     position: relative;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .setting-volume {
