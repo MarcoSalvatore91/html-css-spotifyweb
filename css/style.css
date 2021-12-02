@@ -120,6 +120,7 @@ hr {
     height: 100px;
     width: calc(100% - 60px);
     position: fixed;
+    z-index: 1;
     transition: scale 1s;
 }
 
