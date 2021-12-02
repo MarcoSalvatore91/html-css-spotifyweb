@@ -147,7 +147,7 @@ hr {
 
 /* Recently-Played */
 
-.recently-song {
+.recently-song, .your-song, .popular-song{
     display: flex;
     flex-wrap: wrap;
 }
@@ -160,7 +160,7 @@ hr {
     margin: 30px 0 ;
 }
 
-#recently-played .card {
+#menu-page .card {
     text-align: center;
     width: 50%;
     padding-right: 10px;
@@ -181,17 +181,6 @@ hr {
 }
 
 /* Create for you */
-
-.your-song, .popular-song{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.your-song .card, .popular-song .card{
-    text-align: center;
-    width: 50%;
-    padding-right: 10px;
-}
 
 #create-for-you h1, #create-for-you p, #most-popular h1, #most-popular p{
     margin: 20px 0;
@@ -413,19 +402,20 @@ hr {
         color: white;
         margin: 10px 0;
     }
-    #recently-played .card {
+}
+
+@media screen and (min-width: 878px) {
+    #menu-page .card {
         text-align: center;
-        width: 50%;
+        width: 25%;
         padding-right: 10px;
-    }
-    #create-for-you img, #most-popular img {
-        height: 180px;
-        width: 180px;
-    }
-    .info-song {
-        font-size: 0.9rem;
-        width: 170px;
     }
 }
 
-/* @media screen and (min-width: 992px) */
+@media screen and (min-width: 1440px) {
+    #menu-page .card {
+        text-align: center;
+        width: calc(100% / 6);
+        padding-right: 10px;
+    }
+}
