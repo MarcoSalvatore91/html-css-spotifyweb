@@ -8,6 +8,7 @@
 
 body {
     height: 100vh;
+    font-weight: 800;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -63,6 +64,16 @@ main {
 .icon-side {
     display: flex;
     align-items: center;
+}
+
+.icon-select::before {
+    content: "";
+    height: 30px;
+    width: 5px;
+    background-color: greenyellow;
+    display: none;
+    margin-right: 15px;
+    margin-left: -20px;
 }
 
 #sidebar img {
@@ -135,6 +146,11 @@ hr {
     margin: 20px 0;
 }
 
+#menu-page .nav-select {
+    content: "";
+    border-bottom: 3px solid greenyellow;
+}
+
 #menu-page a{
     color: grey;
     padding: 20px 10px;
@@ -143,6 +159,30 @@ hr {
 
 #menu-page img {
     width: 100%;
+}
+
+.img-contain {
+    position: relative;
+}
+.img-contain .fa-play-circle {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.img-contain:hover .fa-play-circle {
+    opacity: 1;
+}
+
+.img-contain img {
+    filter: opacity(1);
+}
+
+.img-contain:hover img {
+    filter: opacity(0.5);
 }
 
 /* Recently-Played */
@@ -168,7 +208,6 @@ hr {
 
 .info-song {
     margin: 10px 0;
-    font-weight: 600;
 }
 
 #recently-played .info-song span:first-child {
@@ -336,6 +375,9 @@ hr {
     .hidden {
         display: block;
     }
+    .icon-select::before{
+        display: inline;
+    }
     #sidebar #navbar #logo-b img {
         width: 150px;
         margin: 15px 0;
@@ -345,11 +387,11 @@ hr {
         padding-left: 20px;
     }
     #sidebar {
-        flex-basis: 200px;
+        flex-basis: 250px;
         align-items: flex-start;
     }
     #head-main {
-        width: calc(100% - 200px);
+        width: calc(100% - 250px);
     }
     #logo-s {
         display: none;
@@ -400,6 +442,7 @@ hr {
     }
     hr {
         color: white;
+        width: 100%;
         margin: 10px 0;
     }
 }
