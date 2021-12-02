@@ -26,6 +26,11 @@ a {
     color: grey;
 }
 
+.grey:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -84,6 +89,7 @@ main {
 #sidebar #user div:first-child img{
     width: 20px;
     margin-right: 10px;
+    filter: brightness(50%);
 }
 
 #sidebar #user div:last-child img{
@@ -114,6 +120,7 @@ hr {
     height: 100px;
     width: calc(100% - 60px);
     position: fixed;
+    transition: scale 1s;
 }
 
 #head-main span {
@@ -124,6 +131,12 @@ hr {
     position: absolute;
     top: 25px;
     right: 0;
+    transition: scale 1s;
+}
+
+#head-main span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* Menu-Page */
@@ -151,10 +164,14 @@ hr {
     border-bottom: 3px solid greenyellow;
 }
 
-#menu-page a{
+#menu-page a {
     color: grey;
     padding: 20px 10px;
     font-size: 0.9rem;
+}
+
+#menu-page a:hover {
+    color: white;
 }
 
 #menu-page img {
@@ -163,6 +180,7 @@ hr {
 
 .img-contain {
     position: relative;
+    cursor: pointer;
 }
 .img-contain .fa-play-circle {
     font-size: 50px;
@@ -275,6 +293,15 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+}
+
+#current-song #preference i {
+    color: grey;
+}
+
+#current-song #preference i:hover {
+    color: white;
+    cursor: pointer;
 }
 
 #preference i:first-child {
