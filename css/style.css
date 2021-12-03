@@ -76,7 +76,6 @@ main {
     height: 30px;
     width: 2px;
     background-color: greenyellow;
-    display: none;
     margin-right: 15px;
     margin-left: -20px;
 }
@@ -494,6 +493,7 @@ hr {
 /* Responsive */
 
 @media screen and (min-width: 639px) {
+
     .hidden {
         display: block;
     }
